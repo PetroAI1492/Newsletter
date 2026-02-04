@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Global Oil Tightness Signal</title>
+
+<style>
+@page {
+    size: letter;
+    margin: 0.9in;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #1f2933;
+    margin: 0;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 18px;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.header .subtitle {
+    font-size: 14px;
+    color: #4b5563;
+    margin-top: 6px;
+}
+
+.header .meta {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =====================
+   EXECUTIVE VERDICT
+===================== */
+.verdict {
+    background: #f8fafc;
+    border-left: 4px solid #111827;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.verdict h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.verdict p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 6px 0;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+    margin-bottom: 28px;
+}
+
+.section h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    padding-left: 18px;
+    margin: 8px 0;
+}
+
+.section li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+/* =====================
+   INTERPRETATION
+===================== */
+.interpretation {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 16px 18px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 14px;
+    font-size: 11px;
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Global Oil Tightness Signal</h1>
+        <div class="subtitle">
+            Physical Supply–Demand Balance Assessment
+        </div>
+        <div class="meta">
+            <span>Date: {{YYYY-MM-DD}}</span>
+            <span>Observational • Non-Forecast</span>
+        </div>
+    </div>
+
+    <!-- EXECUTIVE VERDICT -->
+    <div class="verdict">
+        <h2>Executive Verdict</h2>
+        <p><strong>Net condition:</strong> Tight, unchanged.</p>
+        <p>
+            Global oil market conditions remain structurally tight, with no
+            material evidence of physical loosening. Inventory behavior,
+            trade flows, and refinery throughput continue to support a
+            constrained supply environment.
+        </p>
+        <p><strong>Action:</strong> No immediate action required. Maintain current posture.</p>
+    </div>
+
+    <!-- PHYSICAL CONFIRMATION -->
+    <div class="section">
+        <h3>Physical Market Confirmation</h3>
+        <ul>
+            <li>Inventories remain within historically tight ranges after seasonal adjustment</li>
+            <li>Refinery utilization continues to absorb available supply</li>
+            <li>No sustained increase in production sufficient to ease balances</li>
+        </ul>
+    </div>
+
+    <!-- TRADE FLOW REALITY -->
+    <div class="section">
+        <h3>Trade Flow Reality</h3>
+        <ul>
+            <li>Global crude and product trade flows remain concentrated</li>
+            <li>No evidence of surplus displacement across major importing regions</li>
+            <li>Limited substitution capacity constrains buyer optionality</li>
+        </ul>
+    </div>
+
+    <!-- PRICE CONFIRMATION -->
+    <div class="section">
+        <h3>Price and Macro Confirmation</h3>
+        <ul>
+            <li>Benchmark prices remain aligned with physical constraints</li>
+            <li>No sustained price divergence signaling demand collapse</li>
+            <li>Macro conditions have not relieved underlying energy stress</li>
+        </ul>
+    </div>
+
+    <!-- INTERPRETATION -->
+    <div class="interpretation">
+        A tight oil market regime reflects limited spare capacity and high
+        dependency on uninterrupted flows. In this environment, price
+        volatility is more likely to be event-driven than supply-led,
+        and downside relief requires a clear physical catalyst rather
+        than sentiment alone.
+    </div>
+
+    <!-- WHAT WOULD CHANGE THIS VIEW -->
+    <div class="section">
+        <h3>What Would Change This View</h3>
+        <ul>
+            <li>Sustained, multi-week inventory builds across regions</li>
+            <li>Material increase in exportable supply</li>
+            <li>Demand destruction visible in trade and consumption data</li>
+            <li>Policy or geopolitical action altering flow constraints</li>
+        </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <span>Prepared for executive situational awareness</span>
+        <span>Sources: EIA • FRED • UN COMTRADE</span>
+    </div>
+
+</div>
+</body>
+</html>
