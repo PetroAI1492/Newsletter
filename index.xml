@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="refinery.xsl"?>
-<newsletter>
-  <metadata>
-    <title>Strait of Hormuz Conflict Summary</title>
-    <date>February 7, 2026</date>
-    <status>Elevated Risk / High Volatility</status>
-  </metadata>
-  
-  <executive_overview>
-    Tensions in the Strait of Hormuz—handling ~20% of global oil trade—have escalated dramatically in early February 2026. Military drills and drone incidents pose immediate risks to market stability.
-  </executive_overview>
+<dashboard>
+  <global_summary>
+    <index_score>30</index_score>
+    <risk_label>MODERATE risk</risk_label>
+    <description>Global chokepoint risk is elevated to moderate. Weather-driven constraints may impact operations at select locations.</description>
+    <highest_risk_point>Bab el-Mandeb (Score 30)</highest_risk_point>
+  </global_summary>
 
-  <geopolitics>
-    <event title="Iranian Naval Exercises">Iran announced live-fire exercises beginning Feb 1, 2026, amid warnings of potential US intervention.</event>
-    <event title="US Naval Deterrence">The administration ordered a "massive armada" to the region; unsafe behavior will not be tolerated.</event>
-    <event title="Drone Incidents">A February 2026 drone strike spiked shipping insurance rates by 15-25%.</event>
-  </geopolitics>
-
-  <market_impacts>
-    <stat label="Global Oil Flow Share">20%</stat>
-    <stat label="Global LNG Trade Share">20%</stat>
-    <stat label="Potential Supply Risk">21 Million bpd</stat>
-    <stat label="Price Sensitivity Layer">$10–$20 per barrel</stat>
-  </market_impacts>
-</newsletter>
+  <chokepoints>
+    <point name="Strait of Hormuz">
+      <current temp="21.8" wind="2.5" vis="24140" precip="0.0" />
+      <status score="20" label="LOW" difficulty="25" difficulty_label="Caution" />
+      <outlook>Conditions deteriorating over the next 6 hours.</outlook>
+      <driver>Wind-driven risk</driver>
+      <impact>Elevated winds could require increased caution during transits.</impact>
+      <forecast>
+        <hour time="2026-02-06T00:00" temp="21.8" wind="2.5" vis="24140" precip="0.0" />
+        <hour time="2026-02-06T01:00" temp="21.9" wind="5.9" vis="24140" precip="0.0" />
+        </forecast>
+    </point>
+    </chokepoints>
+</dashboard>
