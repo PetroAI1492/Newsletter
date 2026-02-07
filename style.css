@@ -1,10 +1,19 @@
-body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0b0e14; color: #e0e0e0; line-height: 1.6; }
-.container { max-width: 900px; margin: 0 auto; padding: 40px; background: #151921; border-radius: 8px; }
-h1 { color: #f39c12; border-bottom: 2px solid #f39c12; padding-bottom: 10px; }
-.date { font-style: italic; color: #999; }
-.alert-box { background: #7b241c; color: #fff; padding: 10px; border-left: 5px solid #e74c3c; font-weight: bold; margin: 20px 0; }
-.data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 30px 0; }
-.stat-card { background: #1c222d; padding: 20px; border-radius: 4px; text-align: center; border: 1px solid #2c3e50; }
-.stat-card .label { display: block; font-size: 0.8em; color: #f39c12; text-transform: uppercase; }
-.stat-card .value { display: block; font-size: 1.5em; font-weight: bold; }
-footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #555; border-top: 1px solid #222; padding-top: 20px; }
+body { background-color: #0b0e14; color: #cfd8dc; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+.dashboard-wrapper { max-width: 1100px; margin: auto; }
+h1, h2, h3 { color: #ffffff; text-transform: uppercase; letter-spacing: 1px; }
+
+.summary-section { background: #1c2331; padding: 20px; border-radius: 8px; border-left: 6px solid #4fc3f7; margin-bottom: 30px; }
+
+.chokepoint-card { background: #151b26; padding: 25px; border-radius: 8px; margin-bottom: 40px; border: 1px solid #2c3e50; }
+
+.risk-badge { display: inline-block; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 15px; }
+.LOW { background: #2e7d32; color: #a5d6a7; }
+.MODERATE { background: #f57f17; color: #fff; }
+.HIGH { background: #c62828; color: #fff; }
+
+.forecast-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+.forecast-table th { background: #263238; color: #80cbc4; text-align: left; padding: 10px; border-bottom: 2px solid #37474f; }
+.forecast-table td { padding: 8px; border-bottom: 1px solid #263238; }
+.forecast-table tr:hover { background: #1c2331; }
+
+footer { text-align: center; color: #546e7a; margin-top: 40px; font-size: 0.8em; }
