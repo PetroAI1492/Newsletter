@@ -3,23 +3,45 @@
   <xsl:template match="/">
     <html>
       <head>
-        <title>Energy Empire Newsletter</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
       </head>
       <body>
-        <h1><xsl:value-of select="newsletter/subject"/></h1>
-        <table>
-          <tr>
-            <th>Region</th>
-            <th>Production (bbl)</th>
-          </tr>
-          <xsl:for-each select="newsletter/oil_data/region">
-            <tr>
-              <td><xsl:value-of select="@name"/></td>
-              <td><xsl:value-of select="production"/></td>
-            </tr>
-          </xsl:for-each>
-        </table>
+        <div class="container">
+          <header>
+            <h1><xsl:value-of select="newsletter/metadata/title"/></h1>
+            <p class="date">Intel Date: <xsl:value-of select="newsletter/metadata/date"/></p>
+            <div class="alert-box">
+               WARNING: <xsl:value-of select="newsletter/metadata/status"/>
+            </div>
+          </header>
+
+          <section class="overview">
+            <h3>Executive Overview</h3>
+            <p><xsl:value-of select="newsletter/executive_overview"/></p>
+          </section>
+
+          <section class="data-grid">
+            <xsl:for-each select="newsletter/market_impacts/stat">
+              <div class="stat-card">
+                <span class="label"><xsl:value-of select="@label"/></span>
+                <span class="value"><xsl:value-of select="."/></span>
+              </div>
+            </xsl:for-each>
+          </section>
+
+          <section class="geopolitics">
+            <h3>Current Developments</h3>
+            <ul>
+              <xsl:for-each select="newsletter/geopolitics/event">
+                <li><strong><xsl:value-of select="@title"/>:</strong> <xsl:value-of select="."/></li>
+              </xsl:for-each>
+            </ul>
+          </section>
+
+          <footer>
+            Professional Energy Newsletter | © 2026 PetroAI1492 Energy Empire
+          </footer>
+        </div>
       </body>
     </html>
   </xsl:template>
