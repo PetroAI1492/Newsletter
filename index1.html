@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetroAI | Energy Intelligence Portal</title>
+    <style>
+        :root {
+            --bg: #0f172a; --card: #1e293b; --text: #f8fafc;
+            --accent: #38bdf8; --border: #334155;
+        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2rem; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; margin-bottom: 3rem; }
+        h1 { margin: 0; letter-spacing: 2px; text-transform: uppercase; font-size: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--card); border: 1px solid var(--border); padding: 1.5rem; border-radius: 8px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .card h2 { color: var(--accent); margin-top: 0; font-size: 1.2rem; }
+        .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; }
+        .btn { display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); 
+               text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.8rem; }
+        .status { font-size: 0.7rem; text-transform: uppercase; color: #4ade80; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PetroAI <span style="font-weight: 300;">Intelligence Hub</span></h1>
+            <p style="color: #64748b;">Current Operations: Strait of Hormuz | Gulf of Guinea | North Sea</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <span class="status">● Live Update</span>
+                <h2>Market Dashboard</h2>
+                <p>Real-time pricing from FRED, vessel tracking, and maritime risk indices. Updated daily at 08:00 EST.</p>
+                <a href="dashboard.html" class="btn">LAUNCH COMMANDER</a>
+            </div>
+
+            <div class="card">
+                <h2>Strategic Briefs</h2>
+                <p>The <i>Perspecticus</i> series: Deep dives into China Q1 demand and geopolitical chokepoint shifts.</p>
+                <a href="briefs/index.html" class="btn">READ ANALYSIS</a>
+            </div>
+
+            <div class="card">
+                <h2>The Vault</h2>
+                <p>Historical intelligence archive. Requires authorized AES-256 decryption key for access.</p>
+                <a href="archive/" class="btn">ACCESS ARCHIVE</a>
+            </div>
+        </div>
+
+        <footer style="margin-top: 5rem; font-size: 0.7rem; color: #475569; text-align: center;">
+            <p>PROPRIETARY INFORMATION - PetroAI © 2026</p>
+            <p>Generated on ThinkPad Win11 Pro | Verified Locally</p>
+        </footer>
+    </div>
+</body>
+</html>
