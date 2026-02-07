@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="refinery.xsl"?>
 <newsletter>
-  <issue>01</issue>
-  <subject>China Prospectus</subject>
-  <oil_data>
-    <region name="Shale Basin">
-      <production unit="bbl">450000</production>
-    </region>
-    <region name="Offshore Rig 4">
-      <production unit="bbl">120000</production>
-    </region>
-  </oil_data>
+  <metadata>
+    <title>Strait of Hormuz Conflict Summary</title>
+    <date>February 7, 2026</date>
+    <status>Elevated Risk / High Volatility</status>
+  </metadata>
+  
+  <executive_overview>
+    Tensions in the Strait of Hormuz—handling ~20% of global oil trade—have escalated dramatically in early February 2026. Military drills and drone incidents pose immediate risks to market stability.
+  </executive_overview>
+
+  <geopolitics>
+    <event title="Iranian Naval Exercises">Iran announced live-fire exercises beginning Feb 1, 2026, amid warnings of potential US intervention.</event>
+    <event title="US Naval Deterrence">The administration ordered a "massive armada" to the region; unsafe behavior will not be tolerated.</event>
+    <event title="Drone Incidents">A February 2026 drone strike spiked shipping insurance rates by 15-25%.</event>
+  </geopolitics>
+
+  <market_impacts>
+    <stat label="Global Oil Flow Share">20%</stat>
+    <stat label="Global LNG Trade Share">20%</stat>
+    <stat label="Potential Supply Risk">21 Million bpd</stat>
+    <stat label="Price Sensitivity Layer">$10–$20 per barrel</stat>
+  </market_impacts>
 </newsletter>
