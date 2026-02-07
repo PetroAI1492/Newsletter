@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="refinery.xsl"?>
+<newsletter>
+  <issue>01</issue>
+  <subject>China Prospectus</subject>
+  <oil_data>
+    <region name="Shale Basin">
+      <production unit="bbl">450000</production>
+    </region>
+    <region name="Offshore Rig 4">
+      <production unit="bbl">120000</production>
+    </region>
+  </oil_data>
+</newsletter>
