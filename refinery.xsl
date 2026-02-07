@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:template match="/">
     <html>
-      <head><link rel="stylesheet" type="text/css" href="style.css"/></head>
+      <head><link rel="stylesheet" type="text/css" href="https://petroai1492.github.io/Newsletter/style.css"/></head>
       <body>
         <div class="dashboard-wrapper">
           <h1>Global Maritime Chokepoint Risk Dashboard</h1>
