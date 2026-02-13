@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EVnergy Briefing – enezuela Sanctions Shift</title>
+  <title>Energy Briefing – Venezuela Sanctions Shift</title>
   <style>
     body {
       margin: 0;
@@ -48,6 +48,7 @@
     .dateline {
       font-size: 12px;
       color: #c5c7d0;
+      text-align: right;
     }
 
     .content {
@@ -141,6 +142,20 @@
       color: #7a7f8c;
       background-color: #fafbfc;
     }
+
+    .provenance {
+      margin-top: 14px;
+      font-size: 11px;
+      color: #7a7f8c;
+      line-height: 1.45;
+    }
+
+    .copyright {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #7a7f8c;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -150,7 +165,10 @@
         <div class="brand">ENERGY INTELLIGENCE BRIEF</div>
         <div class="section-label">Oil &amp; Geopolitics</div>
       </div>
-      <div class="dateline">Global Markets • Today</div>
+      <div class="dateline">
+        February 12, 2026<br>
+        Global Markets
+      </div>
     </div>
 
     <div class="content">
@@ -203,13 +221,23 @@
         heavy‑crude pricing, Gulf Coast refinery economics, and OPEC+ dynamics. Planning decks, risk models, and regional
         strategies should be refreshed to reflect this evolving policy landscape.
       </div>
+
+      <div class="provenance">
+        <strong>Data Provenance:</strong><br>
+        • EIA Weekly Petroleum Status Report — Week ending {{eia_week_ending}}<br>
+        • FRED Market Series (Brent, WTI, Crack Spreads) — Last observation {{fred_last_obs}}<br>
+        • All quantitative references derived from user’s canonical storehouse (EIA v2 + FRED ingestion).<br>
+        • Narrative generated from deterministic inputs; no synthetic data used.
+      </div>
+
+      <div class="copyright">
+        © 2026 Randy Hinton. All rights reserved.
+      </div>
     </div>
 
     <div class="footer">
-      © 2026 Randy Hinton. All rights reserved.</br>
       Internal briefing only. Not investment advice. Calibrate against EIA/IEA/OPEC outlooks and firm‑specific risk thresholds.
     </div>
   </div>
 </body>
-<div class="footer">
 </html>
